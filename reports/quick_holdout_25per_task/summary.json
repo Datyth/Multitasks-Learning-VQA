@@ -1,0 +1,341 @@
+{
+  "design": "Fresh 25 per task from GQA balanced val, image-disjoint from v1 and v2; seed42 adapters only",
+  "metrics": {
+    "E2": {
+      "per_task": {
+        "T1": {
+          "n": 25,
+          "correct": 18,
+          "accuracy": 0.72,
+          "accuracy_ci95": [
+            0.5242302810344169,
+            0.8571632616261843
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 25,
+          "correct": 12,
+          "accuracy": 0.48,
+          "accuracy_ci95": [
+            0.30031003928960015,
+            0.6650178204685269
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 25,
+          "correct": 25,
+          "accuracy": 1.0,
+          "accuracy_ci95": [
+            0.8668035060468213,
+            1.0
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 25,
+          "correct": 22,
+          "accuracy": 0.88,
+          "accuracy_ci95": [
+            0.7004380781662651,
+            0.9583325864293191
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.77,
+      "query_macro_accuracy": 0.6,
+      "verify_macro_accuracy": 0.94,
+      "pooled_accuracy": 0.77,
+      "invalid_rate": 0.0,
+      "n": 100
+    },
+    "E3": {
+      "per_task": {
+        "T1": {
+          "n": 25,
+          "correct": 18,
+          "accuracy": 0.72,
+          "accuracy_ci95": [
+            0.5242302810344169,
+            0.8571632616261843
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 25,
+          "correct": 10,
+          "accuracy": 0.4,
+          "accuracy_ci95": [
+            0.23403057664190918,
+            0.5926087221487266
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 25,
+          "correct": 25,
+          "accuracy": 1.0,
+          "accuracy_ci95": [
+            0.8668035060468213,
+            1.0
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 25,
+          "correct": 21,
+          "accuracy": 0.84,
+          "accuracy_ci95": [
+            0.6534598601976183,
+            0.9359665239142201
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.74,
+      "query_macro_accuracy": 0.56,
+      "verify_macro_accuracy": 0.9199999999999999,
+      "pooled_accuracy": 0.74,
+      "invalid_rate": 0.0,
+      "n": 100
+    },
+    "E4": {
+      "per_task": {
+        "T1": {
+          "n": 25,
+          "correct": 19,
+          "accuracy": 0.76,
+          "accuracy_ci95": [
+            0.5656994004476144,
+            0.8850384226967327
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 25,
+          "correct": 12,
+          "accuracy": 0.48,
+          "accuracy_ci95": [
+            0.30031003928960015,
+            0.6650178204685269
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 25,
+          "correct": 25,
+          "accuracy": 1.0,
+          "accuracy_ci95": [
+            0.8668035060468213,
+            1.0
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 25,
+          "correct": 22,
+          "accuracy": 0.88,
+          "accuracy_ci95": [
+            0.7004380781662651,
+            0.9583325864293191
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.78,
+      "query_macro_accuracy": 0.62,
+      "verify_macro_accuracy": 0.94,
+      "pooled_accuracy": 0.78,
+      "invalid_rate": 0.0,
+      "n": 100
+    }
+  },
+  "contrasts": {
+    "E4-E2": {
+      "Macro": {
+        "diff": 0.01,
+        "ci95": [
+          -0.023809523809523808,
+          0.045454545454545456
+        ],
+        "clusters": 100
+      },
+      "Query": {
+        "diff": 0.02,
+        "ci95": [
+          -0.045454545454545456,
+          0.09508044304309157
+        ],
+        "clusters": 50
+      },
+      "Verify": {
+        "diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 50
+      },
+      "T1": {
+        "diff": 0.04,
+        "ci95": [
+          0.0,
+          0.12
+        ],
+        "clusters": 25
+      },
+      "T2": {
+        "diff": 0.0,
+        "ci95": [
+          -0.12,
+          0.12
+        ],
+        "clusters": 25
+      },
+      "T3": {
+        "diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 25
+      },
+      "T4": {
+        "diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 25
+      }
+    },
+    "E4-E3": {
+      "Macro": {
+        "diff": 0.04,
+        "ci95": [
+          0.0078125,
+          0.08269773311258502
+        ],
+        "clusters": 100
+      },
+      "Query": {
+        "diff": 0.06,
+        "ci95": [
+          0.0,
+          0.13942307692307693
+        ],
+        "clusters": 50
+      },
+      "Verify": {
+        "diff": 0.02,
+        "ci95": [
+          0.0,
+          0.06902709359605877
+        ],
+        "clusters": 50
+      },
+      "T1": {
+        "diff": 0.04,
+        "ci95": [
+          0.0,
+          0.12
+        ],
+        "clusters": 25
+      },
+      "T2": {
+        "diff": 0.08,
+        "ci95": [
+          0.0,
+          0.2
+        ],
+        "clusters": 25
+      },
+      "T3": {
+        "diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 25
+      },
+      "T4": {
+        "diff": 0.04,
+        "ci95": [
+          0.0,
+          0.12
+        ],
+        "clusters": 25
+      }
+    }
+  },
+  "discordant": {
+    "E4-E2": {
+      "T1": {
+        "a_correct_b_wrong": 1,
+        "a_wrong_b_correct": 0
+      },
+      "T2": {
+        "a_correct_b_wrong": 1,
+        "a_wrong_b_correct": 1
+      },
+      "T3": {
+        "a_correct_b_wrong": 0,
+        "a_wrong_b_correct": 0
+      },
+      "T4": {
+        "a_correct_b_wrong": 0,
+        "a_wrong_b_correct": 0
+      }
+    },
+    "E4-E3": {
+      "T1": {
+        "a_correct_b_wrong": 1,
+        "a_wrong_b_correct": 0
+      },
+      "T2": {
+        "a_correct_b_wrong": 2,
+        "a_wrong_b_correct": 0
+      },
+      "T3": {
+        "a_correct_b_wrong": 0,
+        "a_wrong_b_correct": 0
+      },
+      "T4": {
+        "a_correct_b_wrong": 1,
+        "a_wrong_b_correct": 0
+      }
+    }
+  },
+  "exact_p_two_sided": {
+    "E4-E2": 1.0,
+    "E4-E3": 0.125
+  },
+  "T2_answer_frequency_0_to_2": 13,
+  "T2_n": 25
+}

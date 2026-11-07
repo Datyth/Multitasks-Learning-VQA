@@ -1,0 +1,1170 @@
+{
+  "total_runs": 44,
+  "failed_runs": 0,
+  "results": [
+    {
+      "path": "runs/e0",
+      "test_version": "v1",
+      "experiment": "e0",
+      "n": 600,
+      "per_task": {
+        "T1": {
+          "correct": 90,
+          "n": 150,
+          "accuracy": 0.6
+        },
+        "T2": {
+          "correct": 73,
+          "n": 150,
+          "accuracy": 0.4866666666666667
+        },
+        "T3": {
+          "correct": 122,
+          "n": 150,
+          "accuracy": 0.8133333333333334
+        },
+        "T4": {
+          "correct": 127,
+          "n": 150,
+          "accuracy": 0.8466666666666667
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e1_t1",
+      "test_version": "v1",
+      "experiment": "e1_t1",
+      "n": 600,
+      "per_task": {
+        "T1": {
+          "correct": 95,
+          "n": 150,
+          "accuracy": 0.6333333333333333
+        },
+        "T2": {
+          "correct": 71,
+          "n": 150,
+          "accuracy": 0.47333333333333333
+        },
+        "T3": {
+          "correct": 115,
+          "n": 150,
+          "accuracy": 0.7666666666666667
+        },
+        "T4": {
+          "correct": 129,
+          "n": 150,
+          "accuracy": 0.86
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e1_t2",
+      "test_version": "v1",
+      "experiment": "e1_t2",
+      "n": 600,
+      "per_task": {
+        "T1": {
+          "correct": 94,
+          "n": 150,
+          "accuracy": 0.6266666666666667
+        },
+        "T2": {
+          "correct": 75,
+          "n": 150,
+          "accuracy": 0.5
+        },
+        "T3": {
+          "correct": 118,
+          "n": 150,
+          "accuracy": 0.7866666666666666
+        },
+        "T4": {
+          "correct": 128,
+          "n": 150,
+          "accuracy": 0.8533333333333334
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e1_t3",
+      "test_version": "v1",
+      "experiment": "e1_t3",
+      "n": 600,
+      "per_task": {
+        "T1": {
+          "correct": 91,
+          "n": 150,
+          "accuracy": 0.6066666666666667
+        },
+        "T2": {
+          "correct": 70,
+          "n": 150,
+          "accuracy": 0.4666666666666667
+        },
+        "T3": {
+          "correct": 119,
+          "n": 150,
+          "accuracy": 0.7933333333333333
+        },
+        "T4": {
+          "correct": 128,
+          "n": 150,
+          "accuracy": 0.8533333333333334
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e1_t4",
+      "test_version": "v1",
+      "experiment": "e1_t4",
+      "n": 600,
+      "per_task": {
+        "T1": {
+          "correct": 89,
+          "n": 150,
+          "accuracy": 0.5933333333333334
+        },
+        "T2": {
+          "correct": 68,
+          "n": 150,
+          "accuracy": 0.4533333333333333
+        },
+        "T3": {
+          "correct": 119,
+          "n": 150,
+          "accuracy": 0.7933333333333333
+        },
+        "T4": {
+          "correct": 129,
+          "n": 150,
+          "accuracy": 0.86
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e2_joint",
+      "test_version": "v1",
+      "experiment": "e2_joint",
+      "n": 600,
+      "per_task": {
+        "T1": {
+          "correct": 99,
+          "n": 150,
+          "accuracy": 0.66
+        },
+        "T2": {
+          "correct": 72,
+          "n": 150,
+          "accuracy": 0.48
+        },
+        "T3": {
+          "correct": 123,
+          "n": 150,
+          "accuracy": 0.82
+        },
+        "T4": {
+          "correct": 128,
+          "n": 150,
+          "accuracy": 0.8533333333333334
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e3_query",
+      "test_version": "v1",
+      "experiment": "e3_query",
+      "n": 300,
+      "per_task": {
+        "T1": {
+          "correct": 97,
+          "n": 150,
+          "accuracy": 0.6466666666666666
+        },
+        "T2": {
+          "correct": 75,
+          "n": 150,
+          "accuracy": 0.5
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e3_verify",
+      "test_version": "v1",
+      "experiment": "e3_verify",
+      "n": 300,
+      "per_task": {
+        "T3": {
+          "correct": 120,
+          "n": 150,
+          "accuracy": 0.8
+        },
+        "T4": {
+          "correct": 128,
+          "n": 150,
+          "accuracy": 0.8533333333333334
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e4_no_relate",
+      "test_version": "v1",
+      "experiment": "e4_no_relate",
+      "n": 300,
+      "per_task": {
+        "T1": {
+          "correct": 99,
+          "n": 150,
+          "accuracy": 0.66
+        },
+        "T3": {
+          "correct": 122,
+          "n": 150,
+          "accuracy": 0.8133333333333334
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/e4_relate",
+      "test_version": "v1",
+      "experiment": "e4_relate",
+      "n": 300,
+      "per_task": {
+        "T2": {
+          "correct": 76,
+          "n": 150,
+          "accuracy": 0.5066666666666667
+        },
+        "T4": {
+          "correct": 129,
+          "n": 150,
+          "accuracy": 0.86
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/smoke/e0",
+      "test_version": "v1",
+      "experiment": "e0",
+      "n": 20,
+      "per_task": {
+        "T1": {
+          "correct": 3,
+          "n": 5,
+          "accuracy": 0.6
+        },
+        "T2": {
+          "correct": 1,
+          "n": 5,
+          "accuracy": 0.2
+        },
+        "T3": {
+          "correct": 4,
+          "n": 5,
+          "accuracy": 0.8
+        },
+        "T4": {
+          "correct": 4,
+          "n": 5,
+          "accuracy": 0.8
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/smoke/e1_t1",
+      "test_version": "v1",
+      "experiment": "e1_t1",
+      "n": 20,
+      "per_task": {
+        "T1": {
+          "correct": 3,
+          "n": 5,
+          "accuracy": 0.6
+        },
+        "T2": {
+          "correct": 1,
+          "n": 5,
+          "accuracy": 0.2
+        },
+        "T3": {
+          "correct": 4,
+          "n": 5,
+          "accuracy": 0.8
+        },
+        "T4": {
+          "correct": 4,
+          "n": 5,
+          "accuracy": 0.8
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/e0",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e0",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 325,
+          "n": 500,
+          "accuracy": 0.65
+        },
+        "T2": {
+          "correct": 236,
+          "n": 500,
+          "accuracy": 0.472
+        },
+        "T3": {
+          "correct": 414,
+          "n": 500,
+          "accuracy": 0.828
+        },
+        "T4": {
+          "correct": 400,
+          "n": 500,
+          "accuracy": 0.8
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e1_t1",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t1",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 343,
+          "n": 500,
+          "accuracy": 0.686
+        },
+        "T2": {
+          "correct": 273,
+          "n": 500,
+          "accuracy": 0.546
+        },
+        "T3": {
+          "correct": 441,
+          "n": 500,
+          "accuracy": 0.882
+        },
+        "T4": {
+          "correct": 423,
+          "n": 500,
+          "accuracy": 0.846
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e1_t2",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t2",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 344,
+          "n": 500,
+          "accuracy": 0.688
+        },
+        "T2": {
+          "correct": 285,
+          "n": 500,
+          "accuracy": 0.57
+        },
+        "T3": {
+          "correct": 434,
+          "n": 500,
+          "accuracy": 0.868
+        },
+        "T4": {
+          "correct": 424,
+          "n": 500,
+          "accuracy": 0.848
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e1_t3",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t3",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 340,
+          "n": 500,
+          "accuracy": 0.68
+        },
+        "T2": {
+          "correct": 276,
+          "n": 500,
+          "accuracy": 0.552
+        },
+        "T3": {
+          "correct": 441,
+          "n": 500,
+          "accuracy": 0.882
+        },
+        "T4": {
+          "correct": 439,
+          "n": 500,
+          "accuracy": 0.878
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e1_t4",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t4",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 340,
+          "n": 500,
+          "accuracy": 0.68
+        },
+        "T2": {
+          "correct": 273,
+          "n": 500,
+          "accuracy": 0.546
+        },
+        "T3": {
+          "correct": 437,
+          "n": 500,
+          "accuracy": 0.874
+        },
+        "T4": {
+          "correct": 435,
+          "n": 500,
+          "accuracy": 0.87
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e2_joint",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e2_joint",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 346,
+          "n": 500,
+          "accuracy": 0.692
+        },
+        "T2": {
+          "correct": 288,
+          "n": 500,
+          "accuracy": 0.576
+        },
+        "T3": {
+          "correct": 441,
+          "n": 500,
+          "accuracy": 0.882
+        },
+        "T4": {
+          "correct": 444,
+          "n": 500,
+          "accuracy": 0.888
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e3_query",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_query",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 345,
+          "n": 500,
+          "accuracy": 0.69
+        },
+        "T2": {
+          "correct": 282,
+          "n": 500,
+          "accuracy": 0.564
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e3_verify",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_verify",
+      "n": 1000,
+      "per_task": {
+        "T3": {
+          "correct": 436,
+          "n": 500,
+          "accuracy": 0.872
+        },
+        "T4": {
+          "correct": 441,
+          "n": 500,
+          "accuracy": 0.882
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e4_no_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_no_relate",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 350,
+          "n": 500,
+          "accuracy": 0.7
+        },
+        "T3": {
+          "correct": 446,
+          "n": 500,
+          "accuracy": 0.892
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed42/e4_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_relate",
+      "n": 1000,
+      "per_task": {
+        "T2": {
+          "correct": 298,
+          "n": 500,
+          "accuracy": 0.596
+        },
+        "T4": {
+          "correct": 440,
+          "n": 500,
+          "accuracy": 0.88
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e1_t1",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t1",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 344,
+          "n": 500,
+          "accuracy": 0.688
+        },
+        "T2": {
+          "correct": 287,
+          "n": 500,
+          "accuracy": 0.574
+        },
+        "T3": {
+          "correct": 434,
+          "n": 500,
+          "accuracy": 0.868
+        },
+        "T4": {
+          "correct": 425,
+          "n": 500,
+          "accuracy": 0.85
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e1_t2",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t2",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 335,
+          "n": 500,
+          "accuracy": 0.67
+        },
+        "T2": {
+          "correct": 284,
+          "n": 500,
+          "accuracy": 0.568
+        },
+        "T3": {
+          "correct": 435,
+          "n": 500,
+          "accuracy": 0.87
+        },
+        "T4": {
+          "correct": 418,
+          "n": 500,
+          "accuracy": 0.836
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e1_t3",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t3",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 340,
+          "n": 500,
+          "accuracy": 0.68
+        },
+        "T2": {
+          "correct": 285,
+          "n": 500,
+          "accuracy": 0.57
+        },
+        "T3": {
+          "correct": 436,
+          "n": 500,
+          "accuracy": 0.872
+        },
+        "T4": {
+          "correct": 431,
+          "n": 500,
+          "accuracy": 0.862
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e1_t4",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t4",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 344,
+          "n": 500,
+          "accuracy": 0.688
+        },
+        "T2": {
+          "correct": 265,
+          "n": 500,
+          "accuracy": 0.53
+        },
+        "T3": {
+          "correct": 431,
+          "n": 500,
+          "accuracy": 0.862
+        },
+        "T4": {
+          "correct": 425,
+          "n": 500,
+          "accuracy": 0.85
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e2_joint",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e2_joint",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 354,
+          "n": 500,
+          "accuracy": 0.708
+        },
+        "T2": {
+          "correct": 286,
+          "n": 500,
+          "accuracy": 0.572
+        },
+        "T3": {
+          "correct": 449,
+          "n": 500,
+          "accuracy": 0.898
+        },
+        "T4": {
+          "correct": 442,
+          "n": 500,
+          "accuracy": 0.884
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e3_query",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_query",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 349,
+          "n": 500,
+          "accuracy": 0.698
+        },
+        "T2": {
+          "correct": 287,
+          "n": 500,
+          "accuracy": 0.574
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e3_verify",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_verify",
+      "n": 1000,
+      "per_task": {
+        "T3": {
+          "correct": 435,
+          "n": 500,
+          "accuracy": 0.87
+        },
+        "T4": {
+          "correct": 440,
+          "n": 500,
+          "accuracy": 0.88
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e4_no_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_no_relate",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 354,
+          "n": 500,
+          "accuracy": 0.708
+        },
+        "T3": {
+          "correct": 445,
+          "n": 500,
+          "accuracy": 0.89
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed43/e4_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_relate",
+      "n": 1000,
+      "per_task": {
+        "T2": {
+          "correct": 285,
+          "n": 500,
+          "accuracy": 0.57
+        },
+        "T4": {
+          "correct": 440,
+          "n": 500,
+          "accuracy": 0.88
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e1_t1",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t1",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 342,
+          "n": 500,
+          "accuracy": 0.684
+        },
+        "T2": {
+          "correct": 280,
+          "n": 500,
+          "accuracy": 0.56
+        },
+        "T3": {
+          "correct": 438,
+          "n": 500,
+          "accuracy": 0.876
+        },
+        "T4": {
+          "correct": 421,
+          "n": 500,
+          "accuracy": 0.842
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e1_t2",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t2",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 343,
+          "n": 500,
+          "accuracy": 0.686
+        },
+        "T2": {
+          "correct": 299,
+          "n": 500,
+          "accuracy": 0.598
+        },
+        "T3": {
+          "correct": 435,
+          "n": 500,
+          "accuracy": 0.87
+        },
+        "T4": {
+          "correct": 427,
+          "n": 500,
+          "accuracy": 0.854
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e1_t3",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t3",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 341,
+          "n": 500,
+          "accuracy": 0.682
+        },
+        "T2": {
+          "correct": 270,
+          "n": 500,
+          "accuracy": 0.54
+        },
+        "T3": {
+          "correct": 439,
+          "n": 500,
+          "accuracy": 0.878
+        },
+        "T4": {
+          "correct": 433,
+          "n": 500,
+          "accuracy": 0.866
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e1_t4",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e1_t4",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 344,
+          "n": 500,
+          "accuracy": 0.688
+        },
+        "T2": {
+          "correct": 274,
+          "n": 500,
+          "accuracy": 0.548
+        },
+        "T3": {
+          "correct": 434,
+          "n": 500,
+          "accuracy": 0.868
+        },
+        "T4": {
+          "correct": 438,
+          "n": 500,
+          "accuracy": 0.876
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e2_joint",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e2_joint",
+      "n": 2000,
+      "per_task": {
+        "T1": {
+          "correct": 357,
+          "n": 500,
+          "accuracy": 0.714
+        },
+        "T2": {
+          "correct": 284,
+          "n": 500,
+          "accuracy": 0.568
+        },
+        "T3": {
+          "correct": 446,
+          "n": 500,
+          "accuracy": 0.892
+        },
+        "T4": {
+          "correct": 441,
+          "n": 500,
+          "accuracy": 0.882
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e3_query",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_query",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 352,
+          "n": 500,
+          "accuracy": 0.704
+        },
+        "T2": {
+          "correct": 295,
+          "n": 500,
+          "accuracy": 0.59
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e3_verify",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_verify",
+      "n": 1000,
+      "per_task": {
+        "T3": {
+          "correct": 440,
+          "n": 500,
+          "accuracy": 0.88
+        },
+        "T4": {
+          "correct": 437,
+          "n": 500,
+          "accuracy": 0.874
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e4_no_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_no_relate",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 347,
+          "n": 500,
+          "accuracy": 0.694
+        },
+        "T3": {
+          "correct": 439,
+          "n": 500,
+          "accuracy": 0.878
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/seed44/e4_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_relate",
+      "n": 1000,
+      "per_task": {
+        "T2": {
+          "correct": 291,
+          "n": 500,
+          "accuracy": 0.582
+        },
+        "T4": {
+          "correct": 437,
+          "n": 500,
+          "accuracy": 0.874
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/v1_400train/e3_query",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_query",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 343,
+          "n": 500,
+          "accuracy": 0.686
+        },
+        "T2": {
+          "correct": 284,
+          "n": 500,
+          "accuracy": 0.568
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/v1_400train/e3_verify",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e3_verify",
+      "n": 1000,
+      "per_task": {
+        "T3": {
+          "correct": 437,
+          "n": 500,
+          "accuracy": 0.874
+        },
+        "T4": {
+          "correct": 436,
+          "n": 500,
+          "accuracy": 0.872
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/v1_400train/e4_no_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_no_relate",
+      "n": 1000,
+      "per_task": {
+        "T1": {
+          "correct": 338,
+          "n": 500,
+          "accuracy": 0.676
+        },
+        "T3": {
+          "correct": 429,
+          "n": 500,
+          "accuracy": 0.858
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    },
+    {
+      "path": "runs/v2_1000train_500test/v1_400train/e4_relate",
+      "test_version": "v2_1000train_500test",
+      "experiment": "e4_relate",
+      "n": 1000,
+      "per_task": {
+        "T2": {
+          "correct": 297,
+          "n": 500,
+          "accuracy": 0.594
+        },
+        "T4": {
+          "correct": 427,
+          "n": 500,
+          "accuracy": 0.854
+        }
+      },
+      "invalid": 0,
+      "truncated": 0,
+      "errors": []
+    }
+  ]
+}

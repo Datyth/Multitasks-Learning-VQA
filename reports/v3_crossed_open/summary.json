@@ -1,0 +1,23 @@
+{
+  "version": "v3_crossed_open",
+  "train_seeds": [
+    42
+  ],
+  "decision": "Pending",
+  "rationale": "E3 and E4 are complete for 0 of 1 training seeds; the decision uses all seeds.",
+  "warnings": [],
+  "completed": {
+    "pretrained": [],
+    "v1_400train": [],
+    "v2_1000train_500test": [],
+    "quick_holdout_25per_task": [],
+    "seed42": []
+  },
+  "accuracy": {},
+  "e4_minus_e3": {},
+  "e4_minus_e3_macro_per_seed": {},
+  "transfer_mean_over_seeds": null,
+  "transfer_seeds": 0,
+  "interference_e2_minus_e1": null,
+  "interference_seeds": 0
+}

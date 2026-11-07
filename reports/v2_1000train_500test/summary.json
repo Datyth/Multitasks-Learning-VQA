@@ -1,0 +1,1294 @@
+{
+  "version": "v2_1000train_500test",
+  "train_seeds": [
+    42,
+    43,
+    44
+  ],
+  "decision": "Inconclusive",
+  "rationale": "E4 minus E3 macro accuracy is +0.006 (95% CI -0.001 to +0.012); the interval includes zero. Improve task design or repeat with more seeds.",
+  "warnings": [],
+  "completed": {
+    "pretrained": [
+      "e0"
+    ],
+    "v1_400train": [
+      "e3_query",
+      "e3_verify",
+      "e4_no_relate",
+      "e4_relate"
+    ],
+    "seed42": [
+      "e1_t1",
+      "e1_t2",
+      "e1_t3",
+      "e1_t4",
+      "e2_joint",
+      "e3_query",
+      "e3_verify",
+      "e4_no_relate",
+      "e4_relate"
+    ],
+    "seed43": [
+      "e1_t1",
+      "e1_t2",
+      "e1_t3",
+      "e1_t4",
+      "e2_joint",
+      "e3_query",
+      "e3_verify",
+      "e4_no_relate",
+      "e4_relate"
+    ],
+    "seed44": [
+      "e1_t1",
+      "e1_t2",
+      "e1_t3",
+      "e1_t4",
+      "e2_joint",
+      "e3_query",
+      "e3_verify",
+      "e4_no_relate",
+      "e4_relate"
+    ]
+  },
+  "accuracy": {
+    "pretrained | E0 pretrained": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 325,
+          "accuracy": 0.65,
+          "accuracy_ci95": [
+            0.6071920689703412,
+            0.6905205454703878
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 236,
+          "accuracy": 0.472,
+          "accuracy_ci95": [
+            0.4286219475993197,
+            0.5158050310384108
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 414,
+          "accuracy": 0.828,
+          "accuracy_ci95": [
+            0.7924518552217157,
+            0.8585463950220116
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 400,
+          "accuracy": 0.8,
+          "accuracy_ci95": [
+            0.7627101702740526,
+            0.8327150586074055
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.6875,
+      "query_macro_accuracy": 0.5609999999999999,
+      "verify_macro_accuracy": 0.8140000000000001,
+      "pooled_accuracy": 0.6875,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "v1_400train | E3 question-type": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 343,
+          "accuracy": 0.686,
+          "accuracy_ci95": [
+            0.6440308091059584,
+            0.7251328328005456
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 284,
+          "accuracy": 0.568,
+          "accuracy_ci95": [
+            0.5242245356147506,
+            0.6107385162650465
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 437,
+          "accuracy": 0.874,
+          "accuracy_ci95": [
+            0.842031642241812,
+            0.9002651430970722
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 436,
+          "accuracy": 0.872,
+          "accuracy_ci95": [
+            0.8398536717738025,
+            0.8984736120392054
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.75,
+      "query_macro_accuracy": 0.627,
+      "verify_macro_accuracy": 0.873,
+      "pooled_accuracy": 0.75,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "v1_400train | E4 operation grouping": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 338,
+          "accuracy": 0.676,
+          "accuracy_ci95": [
+            0.6337707190597581,
+            0.7155454152173639
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 297,
+          "accuracy": 0.594,
+          "accuracy_ci95": [
+            0.5503962577196476,
+            0.6361703139965426
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 429,
+          "accuracy": 0.858,
+          "accuracy_ci95": [
+            0.8246696706783865,
+            0.8858711024534867
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 427,
+          "accuracy": 0.854,
+          "accuracy_ci95": [
+            0.8203500666587293,
+            0.882251703421391
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.7455,
+      "query_macro_accuracy": 0.635,
+      "verify_macro_accuracy": 0.856,
+      "pooled_accuracy": 0.7455,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed42 | E1 single-task": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 343,
+          "accuracy": 0.686,
+          "accuracy_ci95": [
+            0.6440308091059584,
+            0.7251328328005456
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 285,
+          "accuracy": 0.57,
+          "accuracy_ci95": [
+            0.5262334319840081,
+            0.6126991214216653
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 441,
+          "accuracy": 0.882,
+          "accuracy_ci95": [
+            0.8507673840349824,
+            0.9074074074074073
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 435,
+          "accuracy": 0.87,
+          "accuracy_ci95": [
+            0.8376779926652986,
+            0.8966797896218328
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.752,
+      "query_macro_accuracy": 0.628,
+      "verify_macro_accuracy": 0.876,
+      "pooled_accuracy": 0.752,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed42 | E2 joint": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 346,
+          "accuracy": 0.692,
+          "accuracy_ci95": [
+            0.6501972113746908,
+            0.7308749351094421
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 288,
+          "accuracy": 0.576,
+          "accuracy_ci95": [
+            0.5322644098109273,
+            0.6185766481723753
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 441,
+          "accuracy": 0.882,
+          "accuracy_ci95": [
+            0.8507673840349824,
+            0.9074074074074073
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 444,
+          "accuracy": 0.888,
+          "accuracy_ci95": [
+            0.8573456933034787,
+            0.9127376027165404
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.7595,
+      "query_macro_accuracy": 0.6339999999999999,
+      "verify_macro_accuracy": 0.885,
+      "pooled_accuracy": 0.7595,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed42 | E3 question-type": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 345,
+          "accuracy": 0.69,
+          "accuracy_ci95": [
+            0.6481408712280013,
+            0.7289617737302553
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 282,
+          "accuracy": 0.564,
+          "accuracy_ci95": [
+            0.5202088800086124,
+            0.6068151688194319
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 436,
+          "accuracy": 0.872,
+          "accuracy_ci95": [
+            0.8398536717738025,
+            0.8984736120392054
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 441,
+          "accuracy": 0.882,
+          "accuracy_ci95": [
+            0.8507673840349824,
+            0.9074074074074073
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.752,
+      "query_macro_accuracy": 0.627,
+      "verify_macro_accuracy": 0.877,
+      "pooled_accuracy": 0.752,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed42 | E4 operation grouping": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 350,
+          "accuracy": 0.7,
+          "accuracy_ci95": [
+            0.6584314090816449,
+            0.7385187435059938
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 298,
+          "accuracy": 0.596,
+          "accuracy_ci95": [
+            0.5524145429626023,
+            0.6381215302794642
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 446,
+          "accuracy": 0.892,
+          "accuracy_ci95": [
+            0.8617447145307382,
+            0.9162775845410336
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 440,
+          "accuracy": 0.88,
+          "accuracy_ci95": [
+            0.848579770224084,
+            0.9056255196924294
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.767,
+      "query_macro_accuracy": 0.6479999999999999,
+      "verify_macro_accuracy": 0.886,
+      "pooled_accuracy": 0.767,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed43 | E1 single-task": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 344,
+          "accuracy": 0.688,
+          "accuracy_ci95": [
+            0.646085405329654,
+            0.7270477381027262
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 284,
+          "accuracy": 0.568,
+          "accuracy_ci95": [
+            0.5242245356147506,
+            0.6107385162650465
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 436,
+          "accuracy": 0.872,
+          "accuracy_ci95": [
+            0.8398536717738025,
+            0.8984736120392054
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 425,
+          "accuracy": 0.85,
+          "accuracy_ci95": [
+            0.8160382472597502,
+            0.8786245197686174
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.7444999999999999,
+      "query_macro_accuracy": 0.6279999999999999,
+      "verify_macro_accuracy": 0.861,
+      "pooled_accuracy": 0.7445,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed43 | E2 joint": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 354,
+          "accuracy": 0.708,
+          "accuracy_ci95": [
+            0.6666799846544007,
+            0.7461481740367435
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 286,
+          "accuracy": 0.572,
+          "accuracy_ci95": [
+            0.5282430423113503,
+            0.6146590126201995
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 449,
+          "accuracy": 0.898,
+          "accuracy_ci95": [
+            0.8683647750455783,
+            0.9215660286038228
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 442,
+          "accuracy": 0.884,
+          "accuracy_ci95": [
+            0.8529575380244137,
+            0.9091867549438526
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.7655,
+      "query_macro_accuracy": 0.6399999999999999,
+      "verify_macro_accuracy": 0.891,
+      "pooled_accuracy": 0.7655,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed43 | E3 question-type": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 349,
+          "accuracy": 0.698,
+          "accuracy_ci95": [
+            0.6563715243917267,
+            0.7366091266700354
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 287,
+          "accuracy": 0.574,
+          "accuracy_ci95": [
+            0.5302533678298271,
+            0.616618188627599
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 435,
+          "accuracy": 0.87,
+          "accuracy_ci95": [
+            0.8376779926652986,
+            0.8966797896218328
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 440,
+          "accuracy": 0.88,
+          "accuracy_ci95": [
+            0.848579770224084,
+            0.9056255196924294
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.7555,
+      "query_macro_accuracy": 0.6359999999999999,
+      "verify_macro_accuracy": 0.875,
+      "pooled_accuracy": 0.7555,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed43 | E4 operation grouping": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 354,
+          "accuracy": 0.708,
+          "accuracy_ci95": [
+            0.6666799846544007,
+            0.7461481740367435
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 285,
+          "accuracy": 0.57,
+          "accuracy_ci95": [
+            0.5262334319840081,
+            0.6126991214216653
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 445,
+          "accuracy": 0.89,
+          "accuracy_ci95": [
+            0.8595438141340721,
+            0.9145089834118234
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 440,
+          "accuracy": 0.88,
+          "accuracy_ci95": [
+            0.848579770224084,
+            0.9056255196924294
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.762,
+      "query_macro_accuracy": 0.639,
+      "verify_macro_accuracy": 0.885,
+      "pooled_accuracy": 0.762,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed44 | E1 single-task": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 342,
+          "accuracy": 0.684,
+          "accuracy_ci95": [
+            0.641977078070737,
+            0.7232170623098906
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 299,
+          "accuracy": 0.598,
+          "accuracy_ci95": [
+            0.5544335612927798,
+            0.6400720134751632
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 439,
+          "accuracy": 0.878,
+          "accuracy_ci95": [
+            0.8463946427702861,
+            0.9038411456203509
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 438,
+          "accuracy": 0.876,
+          "accuracy_ci95": [
+            0.8442119499943469,
+            0.9020543368704138
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.759,
+      "query_macro_accuracy": 0.641,
+      "verify_macro_accuracy": 0.877,
+      "pooled_accuracy": 0.759,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed44 | E2 joint": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 357,
+          "accuracy": 0.714,
+          "accuracy_ci95": [
+            0.6728760546154563,
+            0.7518606086533169
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 284,
+          "accuracy": 0.568,
+          "accuracy_ci95": [
+            0.5242245356147506,
+            0.6107385162650465
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 446,
+          "accuracy": 0.892,
+          "accuracy_ci95": [
+            0.8617447145307382,
+            0.9162775845410336
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 441,
+          "accuracy": 0.882,
+          "accuracy_ci95": [
+            0.8507673840349824,
+            0.9074074074074073
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.764,
+      "query_macro_accuracy": 0.641,
+      "verify_macro_accuracy": 0.887,
+      "pooled_accuracy": 0.764,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed44 | E3 question-type": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 352,
+          "accuracy": 0.704,
+          "accuracy_ci95": [
+            0.6625538790779746,
+            0.7423352765614168
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 295,
+          "accuracy": 0.59,
+          "accuracy_ci95": [
+            0.5463618796646929,
+            0.6322656889997446
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 440,
+          "accuracy": 0.88,
+          "accuracy_ci95": [
+            0.848579770224084,
+            0.9056255196924294
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        },
+        "T4": {
+          "n": 500,
+          "correct": 437,
+          "accuracy": 0.874,
+          "accuracy_ci95": [
+            0.842031642241812,
+            0.9002651430970722
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.762,
+      "query_macro_accuracy": 0.647,
+      "verify_macro_accuracy": 0.877,
+      "pooled_accuracy": 0.762,
+      "invalid_rate": 0.0,
+      "n": 2000
+    },
+    "seed44 | E4 operation grouping": {
+      "per_task": {
+        "T1": {
+          "n": 500,
+          "correct": 347,
+          "accuracy": 0.694,
+          "accuracy_ci95": [
+            0.6522544304326852,
+            0.7327872175773242
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T2": {
+          "n": 500,
+          "correct": 291,
+          "accuracy": 0.582,
+          "accuracy_ci95": [
+            0.5383018478283397,
+            0.6244477147325922
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.0
+        },
+        "T3": {
+          "n": 500,
+          "correct": 439,
+          "accuracy": 0.878,
+          "accuracy_ci95": [
+            0.8463946427702861,
+            0.9038411456203509
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 0.998
+        },
+        "T4": {
+          "n": 500,
+          "correct": 437,
+          "accuracy": 0.874,
+          "accuracy_ci95": [
+            0.842031642241812,
+            0.9002651430970722
+          ],
+          "invalid": 0,
+          "truncated": 0,
+          "yes_no_prediction_rate": 1.0
+        }
+      },
+      "macro_accuracy": 0.757,
+      "query_macro_accuracy": 0.6379999999999999,
+      "verify_macro_accuracy": 0.876,
+      "pooled_accuracy": 0.757,
+      "invalid_rate": 0.0,
+      "n": 2000
+    }
+  },
+  "e4_minus_e3": {
+    "v1_400train": {
+      "T1": {
+        "diff": -0.01,
+        "ci95": [
+          -0.032,
+          0.012049999999999728
+        ],
+        "clusters": 500
+      },
+      "T2": {
+        "diff": 0.026,
+        "ci95": [
+          0.004,
+          0.048
+        ],
+        "clusters": 500
+      },
+      "T3": {
+        "diff": -0.016,
+        "ci95": [
+          -0.038,
+          0.006
+        ],
+        "clusters": 500
+      },
+      "T4": {
+        "diff": -0.018,
+        "ci95": [
+          -0.038,
+          0.0
+        ],
+        "clusters": 500
+      },
+      "Macro (T1-T4)": {
+        "diff": -0.0045,
+        "ci95": [
+          -0.01562633292761927,
+          0.006457610551772574
+        ],
+        "clusters": 1836
+      },
+      "Query macro (T1, T2)": {
+        "diff": 0.008,
+        "ci95": [
+          -0.00797130611045406,
+          0.02470434507753509
+        ],
+        "clusters": 968
+      },
+      "Verify macro (T3, T4)": {
+        "diff": -0.017,
+        "ci95": [
+          -0.031108849580179974,
+          -0.0025847535920349015
+        ],
+        "clusters": 971
+      }
+    },
+    "seed42": {
+      "T1": {
+        "diff": 0.01,
+        "ci95": [
+          -0.008,
+          0.03
+        ],
+        "clusters": 500
+      },
+      "T2": {
+        "diff": 0.032,
+        "ci95": [
+          0.008,
+          0.056
+        ],
+        "clusters": 500
+      },
+      "T3": {
+        "diff": 0.02,
+        "ci95": [
+          0.002,
+          0.042
+        ],
+        "clusters": 500
+      },
+      "T4": {
+        "diff": -0.002,
+        "ci95": [
+          -0.024,
+          0.02
+        ],
+        "clusters": 500
+      },
+      "Macro (T1-T4)": {
+        "diff": 0.015,
+        "ci95": [
+          0.0038406308037758274,
+          0.02581355818286258
+        ],
+        "clusters": 1836
+      },
+      "Query macro (T1, T2)": {
+        "diff": 0.021,
+        "ci95": [
+          0.004872847778059582,
+          0.0359911672959433
+        ],
+        "clusters": 968
+      },
+      "Verify macro (T3, T4)": {
+        "diff": 0.009000000000000001,
+        "ci95": [
+          -0.005864261064927538,
+          0.023841399106925676
+        ],
+        "clusters": 971
+      }
+    },
+    "seed43": {
+      "T1": {
+        "diff": 0.01,
+        "ci95": [
+          -0.01,
+          0.03
+        ],
+        "clusters": 500
+      },
+      "T2": {
+        "diff": -0.004,
+        "ci95": [
+          -0.03,
+          0.02
+        ],
+        "clusters": 500
+      },
+      "T3": {
+        "diff": 0.02,
+        "ci95": [
+          0.0,
+          0.04
+        ],
+        "clusters": 500
+      },
+      "T4": {
+        "diff": 0.0,
+        "ci95": [
+          -0.024,
+          0.022
+        ],
+        "clusters": 500
+      },
+      "Macro (T1-T4)": {
+        "diff": 0.006500000000000001,
+        "ci95": [
+          -0.004438982064607692,
+          0.01673845914587079
+        ],
+        "clusters": 1836
+      },
+      "Query macro (T1, T2)": {
+        "diff": 0.003,
+        "ci95": [
+          -0.012707375164030473,
+          0.018929645222652936
+        ],
+        "clusters": 968
+      },
+      "Verify macro (T3, T4)": {
+        "diff": 0.01,
+        "ci95": [
+          -0.0048216168734667945,
+          0.025182530733215063
+        ],
+        "clusters": 971
+      }
+    },
+    "seed44": {
+      "T1": {
+        "diff": -0.01,
+        "ci95": [
+          -0.034,
+          0.014
+        ],
+        "clusters": 500
+      },
+      "T2": {
+        "diff": -0.008,
+        "ci95": [
+          -0.03,
+          0.014
+        ],
+        "clusters": 500
+      },
+      "T3": {
+        "diff": -0.002,
+        "ci95": [
+          -0.022,
+          0.016
+        ],
+        "clusters": 500
+      },
+      "T4": {
+        "diff": 0.0,
+        "ci95": [
+          -0.02,
+          0.02
+        ],
+        "clusters": 500
+      },
+      "Macro (T1-T4)": {
+        "diff": -0.005000000000000001,
+        "ci95": [
+          -0.015664589863044,
+          0.005144798490704484
+        ],
+        "clusters": 1836
+      },
+      "Query macro (T1, T2)": {
+        "diff": -0.009000000000000001,
+        "ci95": [
+          -0.025117575488000695,
+          0.007968229412138931
+        ],
+        "clusters": 968
+      },
+      "Verify macro (T3, T4)": {
+        "diff": -0.001,
+        "ci95": [
+          -0.014862924949140056,
+          0.013640396676484489
+        ],
+        "clusters": 971
+      }
+    },
+    "seeds pooled (3/3)": {
+      "T1": {
+        "diff": 0.003333333333333334,
+        "ci95": [
+          -0.010666666666666665,
+          0.017333333333333333
+        ],
+        "clusters": 500
+      },
+      "T2": {
+        "diff": 0.0066666666666666645,
+        "ci95": [
+          -0.007333333333333336,
+          0.020000000000000004
+        ],
+        "clusters": 500
+      },
+      "T3": {
+        "diff": 0.012666666666666668,
+        "ci95": [
+          0.000666666666666667,
+          0.025333333333333336
+        ],
+        "clusters": 500
+      },
+      "T4": {
+        "diff": -0.0006666666666666661,
+        "ci95": [
+          -0.015333333333333334,
+          0.013333333333333336
+        ],
+        "clusters": 500
+      },
+      "Macro (T1-T4)": {
+        "diff": 0.0055000000000000005,
+        "ci95": [
+          -0.0013590374147723063,
+          0.012166554382346902
+        ],
+        "clusters": 1836
+      },
+      "Query macro (T1, T2)": {
+        "diff": 0.004999999999999999,
+        "ci95": [
+          -0.004904298912693185,
+          0.01429456822284682
+        ],
+        "clusters": 968
+      },
+      "Verify macro (T3, T4)": {
+        "diff": 0.006000000000000001,
+        "ci95": [
+          -0.004076323725241794,
+          0.01581003676566646
+        ],
+        "clusters": 971
+      }
+    }
+  },
+  "e4_minus_e3_macro_per_seed": {
+    "seed42": 0.015,
+    "seed43": 0.006500000000000001,
+    "seed44": -0.005000000000000001
+  },
+  "transfer_mean_over_seeds": {
+    "T1": {
+      "T1": 0.036,
+      "T2": 0.08800000000000004,
+      "T3": 0.04733333333333337,
+      "T4": 0.04599999999999993
+    },
+    "T2": {
+      "T1": 0.031333333333333324,
+      "T2": 0.10666666666666665,
+      "T3": 0.04133333333333337,
+      "T4": 0.04599999999999993
+    },
+    "T3": {
+      "T1": 0.030666666666666693,
+      "T2": 0.08200000000000003,
+      "T3": 0.049333333333333375,
+      "T4": 0.06866666666666661
+    },
+    "T4": {
+      "T1": 0.03533333333333329,
+      "T2": 0.0693333333333334,
+      "T3": 0.040000000000000036,
+      "T4": 0.06533333333333328
+    }
+  },
+  "transfer_seeds": 3,
+  "interference_e2_minus_e1": {
+    "T1": {
+      "diff": 0.018666666666666665,
+      "ci95": [
+        0.0006666666666666647,
+        0.03668333333333325
+      ],
+      "clusters": 500
+    },
+    "T2": {
+      "diff": -0.006666666666666665,
+      "ci95": [
+        -0.022666666666666665,
+        0.009333333333333332
+      ],
+      "clusters": 500
+    },
+    "T3": {
+      "diff": 0.013333333333333332,
+      "ci95": [
+        -0.0006666666666666661,
+        0.027333333333333328
+      ],
+      "clusters": 500
+    },
+    "T4": {
+      "diff": 0.019333333333333334,
+      "ci95": [
+        0.005999999999999998,
+        0.03333333333333333
+      ],
+      "clusters": 500
+    },
+    "Macro (T1-T4)": {
+      "diff": 0.011166666666666667,
+      "ci95": [
+        0.0031096652241294712,
+        0.01883316576440557
+      ],
+      "clusters": 1836
+    }
+  },
+  "interference_seeds": 3
+}
