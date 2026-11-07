@@ -1,0 +1,69 @@
+# Inference-only fresh 25-question-per-task holdout. Use --adapters-from v2_seed42.
+version: quick_holdout_25per_task
+model: Qwen/Qwen3.5-4B
+model_path: models/Qwen3.5-4B
+seed: 42
+train_seeds:
+- 42
+per_seed_runs: true
+gpu: 0
+prompt_template: '<image>Answer the question using a short answer only: {question}'
+paths:
+  questions_zip: data/raw/questions1.2.zip
+  images_zip: data/raw/images.zip
+  processed_dir: data/quick_holdout_25per_task
+  images_dir: data/quick_holdout_25per_task/images
+  runs_dir: runs/quick_holdout_25per_task
+  reports_dir: reports/quick_holdout_25per_task
+previous_versions:
+  v2_seed42:
+    processed_dir: data/v2_1000train_500test
+    runs_dir: runs/v2_1000train_500test/seed42
+data:
+  train_questions_file: train_balanced_questions.json
+  heldout_questions_file: val_balanced_questions.json
+  internal_val_image_fraction: 0.1
+  targets:
+    train_pool: 1000
+    internal_val: 200
+    test: 25
+grouping_operation: relate
+tasks:
+  T1:
+    structural: query
+    has_operation: false
+  T2:
+    structural: query
+    has_operation: true
+  T3:
+    structural: verify
+    has_operation: false
+  T4:
+    structural: verify
+    has_operation: true
+train:
+  examples_per_task: 1000
+  effective_batch_size: 8
+  micro_batch_size: 1
+  learning_rate: 0.0001
+  warmup_ratio: 0.05
+  lora_rank: 8
+  lora_alpha: 16
+  target_modules: all-linear
+  freeze_vit: true
+  freeze_aligner: true
+  max_length: 1024
+  image_max_token_num: 256
+  torch_dtype: bfloat16
+  quant_method: bnb
+  quant_bits: 4
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_use_double_quant: true
+  logging_steps: 5
+  dataloader_num_workers: 2
+  eval_at_end: true
+  smoke_steps: 3
+evaluation:
+  max_new_tokens: 16
+  temperature: 0
+  samples_per_task: 25

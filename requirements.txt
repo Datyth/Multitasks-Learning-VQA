@@ -1,0 +1,29 @@
+# Multi-task VQA pilot. Target: Python 3.11 (conda env `datpt_ml`).
+#
+# PyTorch is NOT listed here: install it first with the wheel matching your driver
+# (see README Step 1). torch 2.9.1 + CUDA 12.8 wheels are known to see the GPUs on this
+# machine (driver 595.99.02).
+#
+# Constraints below come from the ms-swift 4.6.0 package metadata (peft<0.21,
+# transformers<5.20, datasets<4.8.5) and the ms-swift Qwen3.5 guide (transformers>=5.9,
+# qwen_vl_utils>=0.0.14). Do not upgrade one in isolation.
+
+ms-swift==4.6.0
+transformers>=5.9,<5.20
+peft>=0.11,<0.21
+accelerate>=1.0
+bitsandbytes>=0.45
+qwen-vl-utils>=0.0.14
+
+# Upper bounds keep the stack on major versions known to pair with torch 2.9 / ms-swift.
+pillow>=10,<13
+numpy>=1.26,<3
+pandas>=2.2,<3
+matplotlib>=3.8
+pyyaml>=6
+ijson>=3.3
+pytest>=8
+
+# Optional, deliberately not installed by default (see README "Optional FLA"):
+#   flash-linear-attention  faster Qwen3.5 GatedDeltaNet kernels; guide recommends Python 3.12
+#   flash-attn              not required by this stack

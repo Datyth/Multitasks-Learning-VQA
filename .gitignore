@@ -1,0 +1,12 @@
+# datasets, checkpoints and generated results
+data/
+models/
+runs/
+reports/
+
+# caches and logs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+output/

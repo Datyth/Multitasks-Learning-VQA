@@ -1,0 +1,77 @@
+# v2_1000train_500test: larger-sample version of the pilot. Identical to config.yaml (v1) in model,
+# QLoRA settings, task definitions, prompt and metrics; only the sample sizes, output paths, GPU and
+# training seeds differ. v1 data, checkpoints, predictions and reports are left untouched.
+# Pass it explicitly everywhere: --config config.v2_1000train_500test.yaml
+# Build: python src/prepare.py --config config.v2_1000train_500test.yaml build
+
+version: v2_1000train_500test
+
+model: Qwen/Qwen3.5-4B            # fallback, only if necessary and documented: Qwen/Qwen3.5-2B
+model_path: models/Qwen3.5-4B     # local checkpoint; nothing is downloaded implicitly
+seed: 42                          # dataset construction seed; also the default training seed
+train_seeds: [42, 43, 44]         # training seeds compared in the v2 report (LoRA init + data order only)
+per_seed_runs: true               # adapters go to runs_dir/seed<N>/<experiment>, so seeds never overwrite
+gpu: 1                            # nvidia-smi index (PCI bus order is enforced); VQA_GPU overrides
+
+prompt_template: "<image>Answer the question using a short answer only: {question}"
+
+paths:
+  questions_zip: data/raw/questions1.2.zip
+  images_zip: data/raw/images.zip
+  processed_dir: data/v2_1000train_500test
+  images_dir: data/v2_1000train_500test/images
+  runs_dir: runs/v2_1000train_500test
+  reports_dir: reports/v2_1000train_500test
+
+# Earlier versions. Every question and image they used (any split) is excluded from the new test pool,
+# so the new test contains no previously evaluated question. Their finished adapters can be scored on
+# the new test with `evaluate.py --adapters-from v1_400train` (output: runs_dir/v1_400train/<experiment>).
+previous_versions:
+  v1_400train:
+    processed_dir: data/processed
+    runs_dir: runs
+
+data:
+  train_questions_file: train_balanced_questions.json   # train pool + internal validation
+  heldout_questions_file: val_balanced_questions.json   # held-out pilot test (NOT the GQA test set)
+  internal_val_image_fraction: 0.1   # share of official-train images reserved for internal validation
+  targets:                           # samples per task; targets, not assumed counts
+    train_pool: 1000
+    internal_val: 200
+    test: 500
+
+# Coarse operation-based diagnostic: membership uses real semantic[].operation steps.
+grouping_operation: relate
+tasks:
+  T1: {structural: query, has_operation: false}
+  T2: {structural: query, has_operation: true}
+  T3: {structural: verify, has_operation: false}
+  T4: {structural: verify, has_operation: true}
+
+train:
+  examples_per_task: 1000         # each task seen once: E1 125, E3/E4 250, E2 500 optimizer steps
+  effective_batch_size: 8
+  micro_batch_size: 1              # gradient accumulation = effective / micro = 8
+  learning_rate: 0.0001
+  warmup_ratio: 0.05
+  lora_rank: 8
+  lora_alpha: 16
+  target_modules: all-linear
+  freeze_vit: true
+  freeze_aligner: true
+  max_length: 1024
+  image_max_token_num: 256
+  torch_dtype: bfloat16
+  quant_method: bnb
+  quant_bits: 4
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_use_double_quant: true
+  logging_steps: 5
+  dataloader_num_workers: 2
+  eval_at_end: true                # one internal-validation loss pass at the final step
+  smoke_steps: 3                   # at most 5; used only by `train.sh <id> --smoke`
+
+evaluation:
+  max_new_tokens: 16
+  temperature: 0
+  samples_per_task: 500
